@@ -14,7 +14,7 @@ class Goods extends CI_Controller{
     }
 
     public function findAll(){
-        
+        $num=1;
         $this->load->library('pagination');
         $config['base_url'] = site_url('admin/goods/findAll/');
         $config['total_rows'] =10;
